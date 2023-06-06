@@ -46,37 +46,36 @@ Note: Some features or functionality of CloudSniffer may vary across different o
    pip install -r requirements.txt
    ```
    
-   ## Usage
+ ## Usage
    
-   Run CloudSniffer with the desired options:
+ Run CloudSniffer with the desired options:
    
-   ```
-   python CloudSniffer.py domain ipfile [--trace] [--cleandns] [--useragents uafile] [--timeout seconds] [--aggressive]
+ ```
+ python CloudSniffer.py domain ipfile [--trace] [--cleandns] [--useragents uafile] [--timeout seconds] [--aggressive]
    
-   ```
-   `domain`: The domain or subdomain to test.
+ ```
+ `domain`: The domain or subdomain to test.
 
-   `ipfile`: The file containing the list of IP addresses to test against.
+ `ipfile`: The file containing the list of IP addresses to test against.
 
-   `--trace`: Activate the trace file to record the results (optional).
+ `--trace`: Activate the trace file to record the results (optional).
 
-   `--cleandns`: Clean the DNS cache after every hosts file change (optional).
+ `--cleandns`: Clean the DNS cache after every hosts file change (optional).
+  `--useragents uafile`: The file containing the list of user agents (optional).
 
-   `--useragents uafile`: The file containing the list of user agents (optional).
+ `--timeout seconds`: The timeout for each request in seconds (optional, default: 5).
 
-   `--timeout seconds`: The timeout for each request in seconds (optional, default: 5).
-
-   `--aggressive`: Perform more intensive checks (optional).
+ `--aggressive`: Perform more intensive checks (optional).
    
-   Review the results displayed in the console. CloudSniffer will attempt to find the real IP address of the domain and provide potential matches based on the observed responses.
+ Review the results displayed in the console. CloudSniffer will attempt to find the real IP address of the domain and provide potential matches based on the observed responses.
    
-   ## Contribution
+ ## Contribution
    
-   Contributions to CloudSniffer are welcome! If you have any ideas, suggestions, or encounter any issues, please feel free to open an issue. You can also contribute by creating a pull request with your proposed changes.
+ Contributions to CloudSniffer are welcome! If you have any ideas, suggestions, or encounter any issues, please feel free to open an issue. You can also contribute by creating a pull request with your proposed changes.
    
-   ## License
+ ## License
    
-   CloudSniffer is licensed under the MIT License. See the LICENSE file for details.
+ CloudSniffer is licensed under the MIT License. See the LICENSE file for details.
    
 **Note:** CloudSniffer leverages the hosts file to perform brute force testing against a list of IP addresses. However, it's important to note that the results obtained through this method are not guaranteed to be 100% accurate. The actual IP address of a website may still remain hidden due to various factors, including dynamic IP assignments, load balancing, and CDN configurations.
 
