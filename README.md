@@ -4,6 +4,13 @@ CloudSniffer is a powerful tool designed to assist in the discovery of the real 
 
 **Disclaimer: CloudSniffer should be used responsibly and with proper authorization and legal rights. It is intended for educational and research purposes only. Unauthorized use of this tool is strictly prohibited.**
 
+[![License](https://img.shields.io/github/license/Alaa-abdulridha/CloudSniffer)](https://github.com/Alaa-abdulridha/CloudSniffer/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Alaa-abdulridha/CloudSniffer)](https://github.com/Alaa-abdulridha/CloudSniffer/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Alaa-abdulridha/CloudSniffer)](https://github.com/Alaa-abdulridha/CloudSniffer/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/Alaa-abdulridha/CloudSniffer)](https://github.com/Alaa-abdulridha/CloudSniffer/issues)
+
+
+
 ## Features
 
 - **Brute Force Testing:** CloudSniffer systematically tests a list of IP addresses to identify the real IP address of a website.
