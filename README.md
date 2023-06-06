@@ -55,24 +55,37 @@ Note: Some features or functionality of CloudSniffer may vary across different o
    
    ```
    `domain`: The domain or subdomain to test.
+
    `ipfile`: The file containing the list of IP addresses to test against.
+
    `--trace`: Activate the trace file to record the results (optional).
+
    `--cleandns`: Clean the DNS cache after every hosts file change (optional).
+
    `--useragents uafile`: The file containing the list of user agents (optional).
+
    `--timeout seconds`: The timeout for each request in seconds (optional, default: 5).
+
    `--aggressive`: Perform more intensive checks (optional).
    
    Review the results displayed in the console. CloudSniffer will attempt to find the real IP address of the domain and provide potential matches based on the observed responses.
    
    ## Contribution
    
-   Contributions to CloudSniffer are welcome! If you have any ideas, suggestions, or encounter any issues, please feel free to open an issue on the GitHub repository. You can also contribute by creating a pull request with your proposed changes.
+   Contributions to CloudSniffer are welcome! If you have any ideas, suggestions, or encounter any issues, please feel free to open an issue. You can also contribute by creating a pull request with your proposed changes.
    
    ## License
    
    CloudSniffer is licensed under the MIT License. See the LICENSE file for details.
    
-   # Please note that CloudSniffer is intended for educational and research purposes only. Use it responsibly and ensure you have the necessary permissions and legal rights to perform such tests. Unauthorized use of this tool is strictly prohibited.
+**Note:** CloudSniffer leverages the hosts file to perform brute force testing against a list of IP addresses. However, it's important to note that the results obtained through this method are not guaranteed to be 100% accurate. The actual IP address of a website may still remain hidden due to various factors, including dynamic IP assignments, load balancing, and CDN configurations.
+
+To increase the chances of finding the real IP address, it is recommended to provide a comprehensive list of possible IP addresses where the website's IP history may be available. Sources like VirusTotal or other threat intelligence platforms can be used to gather such information.
+
+CloudSniffer serves as a helpful tool in minimizing the possibility of discovering the real IP address of a website protected by Cloudflare. However, it's crucial to use this tool responsibly, ensure you have the necessary permissions and legal rights, and abide by ethical guidelines.
+
+Please use CloudSniffer for educational and research purposes only, and adhere to the terms and conditions of any platforms or services you utilize in conjunction with this tool. Unauthorized use of CloudSniffer is strictly prohibited.
+
    
    
    
